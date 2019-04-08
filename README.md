@@ -4,9 +4,9 @@ The colour based segmentation mask generator that is explained in the paper 'Sta
 ### Installation
 Install the dependencies
 ```
-$ pip install opencv-python
-$ pip install numpy
-$ pip install matplotlib
+$pip install opencv-python
+$pip install numpy
+$pip install matplotlib
 ```
 
 ### Segmentation
