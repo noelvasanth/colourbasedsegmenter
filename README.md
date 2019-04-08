@@ -13,3 +13,8 @@ $ pip install matplotlib
 ```
 $python3 seg.py --input_image [image path]
 ```
+
+### HSV Colour-Range Picker
+```
+$python3 try.py --input_image [image path]
+```
