@@ -9,3 +9,7 @@ $ pip install numpy
 $ pip install matplotlib
 ```
 
+### Segmentation
+```
+$python3 seg.py --input_image [image path]
+```
