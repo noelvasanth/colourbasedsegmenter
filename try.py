@@ -4,6 +4,11 @@ import sys
 import tkinter as tk
 from tkinter import filedialog
 import matplotlib.pyplot as plt
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--input_image", type=str, help="input image path")
+args = parser.parse_args()
 
 image_hsv = None
 pixel = (0,0,0) #RANDOM DEFAULT VALUE
@@ -37,7 +42,7 @@ def main():
     # file_path = filedialog.askopenfilename(filetypes = ftypes)
     # file_path = '‎⁨y_5.jpg'
     # image_src = cv2.imread(file_path)
-    image_src = cv2.imread('y_5.jpg')
+    image_src = cv2.imread(args.input_image)
     plt.imshow(image_src)
     plt.show()
 

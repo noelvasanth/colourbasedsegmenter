@@ -3,6 +3,14 @@ import numpy as np
 import matplotlib.pyplot as plt
 from PIL import Image
 import glob
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--input_image", type=str, help="input image path")
+args = parser.parse_args()
+
+
+print(args)
 
 def combine(img1, img2):
 	foreground = img1
@@ -30,7 +38,7 @@ def combine(img1, img2):
 # 	cv2.imwrite(file.split('/')[-1], im)
 
 
-im = cv2.imread('/Users/noel/Desktop/sortedimages/Finished pairs/4/IMG_20190329_112835.jpg')
+im = cv2.imread(args.input_image)
 #im = cv2.cvtColor(im, cv2.COLOR_BGR2RGB)
 #im = im.astype(np.float32)/255.0
 im = cv2.cvtColor(im, cv2.COLOR_BGR2HSV)
